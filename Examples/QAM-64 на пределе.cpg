@@ -1,0 +1,16 @@
+# QAM-64 без кода при С/Ш 18 дБ: созвездие ещё различимо, но облака уже
+# касаются границ решения. Смотрите вкладку BER: замер лежит на теории.
+modem=qam
+order=64
+channel=awgn
+equalizer=1
+snr_db=18
+frame_bits=12000
+seed=1
+sweep_from=8
+sweep_to=24
+sweep_step=1
+sym_baud=4800
+sym_rolloff=0.22
+text:
+QAM-64 на пределе: при таком С/Ш ошибки уже видны глазом в принятом тексте.

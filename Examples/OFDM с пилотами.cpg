@@ -1,0 +1,18 @@
+# OFDM: данные раскладываются по поднесущим, циклический префикс покрывает
+# рассеяние канала, пилоты дают оценку. Смотрите вкладку «Спектр» —
+# видно занятую полосу и провалы многолучёвого канала.
+modem=ofdm
+order=16
+channel=multipath
+equalizer=1
+snr_db=16
+frame_bits=8000
+seed=5
+ofdm_fft=256
+ofdm_cp=24
+ofdm_active_half=100
+ofdm_pilot_every=10
+ofdm_preamble=4
+ofdm_sub_hz=250
+text:
+OFDM: спектр занят целиком, а канал выедает из него провалы.
